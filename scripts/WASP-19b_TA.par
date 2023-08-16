@@ -1,0 +1,34 @@
+#Eleccion de Objeto
+TARGET = WASP-19          # Target name
+RA     = 148.416767       # RA in deg (J2000)
+DEC    = -45.659108       # DEC in deg (J2000)
+PMRA   = -35.4074         # PM RA in mas/yr
+PMDEC  = 17.2878          # PM DEC in mas/yr
+PARALX = 3.7516           # Parallax in mas
+RV     = 20679.0          # RV in m/s
+# Datos de observacion
+INST   = TRAPPIST            # ISAAC, SofI
+DATE   = 2019-03-18       # 2007-04-27, 2007-05-01, 2007-05-05 
+SELEC  = Selec1           # Selec1=dfb, Selec2=db
+NREFE  = 1                # Number of references in photometry
+#Parametros calibracion
+BIAS = True               # If include bias correction in calibration
+DARK = True               # If include dark correction in calibration
+FLAT = True               # If include flat correction in calibration
+BPIX = True              # If include bad pixel correction in calibration
+DTOL = 20.0               # Tolerance in seconds to accept a DARK
+SIGCLIP = 3.0             # Sigma clipping for combining images
+SCIREG = 17 22 2064 2080  # Science region (to exclude overscan): X0 Y0 X1 Y1
+#Parametros Fotometria
+APERT = 10.0,20.0,0.5     # arange of apertures in photometry: Apmin,Apmax,dAp (numpy arange style)
+ANNUL = 15.0              # arange of inner annuli: Anmin, Anmax, dAn (numpy arange style)
+DANNU = 5.0               # arange of annuli's widths: dAnmin, dAnmax, ddAn (numpy arange style)
+#Parametros Generales
+THRES = 3.0              # Finding Threshold
+FWHM  = 5.0              # FWHM of stars in images
+SRAD  = 12.0             # Tolerance redius to find stars around selected center
+NITER = 3                # Number of iterations in sigma-clip
+PLOTSTEP = 10            # Frequency of centering plots: 0 (no plots but first), 1 (plot every file), N (every N files)
+CALG  = none             # Centering Algorithm
+CBOX  = 10               # Centering Box
+SALGO = centroid         # Sky Fitting Algorithm
