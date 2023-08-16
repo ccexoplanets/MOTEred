@@ -8,10 +8,15 @@ El orden de ejecución es el siguiente:
 
 1) Crear carpeta imagenes (al mismo nivel que carpeta scripts).
 2) Dentro de imagenes crear la siguiente estructura:
-     imagenes/INSTRUMENTO/YYYY-MM-DD/raw/bias
-     imagenes/INSTRUMENTO/YYYY-MM-DD/raw/dark
-     imagenes/INSTRUMENTO/YYYY-MM-DD/raw/flat
-     imagenes/INSTRUMENTO/YYYY-MM-DD/raw/science
+
+   imagenes/INSTRUMENTO/YYYY-MM-DD/raw/bias
+   
+   imagenes/INSTRUMENTO/YYYY-MM-DD/raw/dark
+   
+   imagenes/INSTRUMENTO/YYYY-MM-DD/raw/flat
+   
+   imagenes/INSTRUMENTO/YYYY-MM-DD/raw/science
+   
 3) Colocar archivos .fits sin calibrar en las carpetas correspondientes (puede usar comando fitsheader para identificar imágenes).
 4) Editar archivo <ARCHIVO>.par, donde <ARCHIVO> es cualquier nombre a definir (e.g., WASP-19b_TA.par).
 5) Verificar que en archivo .par la información de la noche de observación a calibrar calze con la estructura de archivos en imágenes.
