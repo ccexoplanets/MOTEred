@@ -25,5 +25,6 @@ El orden de ejecución es el siguiente:
 8) Crear lista llamada "science_images.lst" con nombres de archivos .fits que serán incluídos en fotometría (en carpeta science dentro de imagenes "calibrated").
 9) Ejecutar python apply_photometry.par.
 10) Ver en carpeta "photometry" resultados de la fotometría (en particular archivo <ARCHIVO>.log que muestra rms por estrella de referencia y apertura).
-11) Editar jupyter notebook correspondiente (e.g., jupyter notebook WASP-19b_TA.ipynb).
+11) Editar jupyter notebook correspondiente a primer analisis (e.g., jupyter notebook WASP-19b_TA.ipynb) y seleccionar estrella de referencia y apertura.
+12) Editar jupyter notebook para realizar el fit MCMC (e.g., transitos_mcmc_XXXX.ipynb).
    
