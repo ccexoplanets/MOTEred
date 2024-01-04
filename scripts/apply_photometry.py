@@ -229,7 +229,7 @@ for i in range(nfiles):
     except:
         fwhm = 0.0
     fits_fwhm.append(fwhm)
-    time_utc = Time(obsdate, format='fits', scale='utc', location=(obs_lat*u.deg, obs_long*u.deg))
+    time_utc = Time(obsdate, format='fits', scale='utc', location=(obs_long*u.deg, obs_lat*u.deg))
     jd_utc[i] = time_utc.jd
     mjd_tdb[i] = time_utc.tdb.mjd
     mean, median, std = sigma_clipped_stats(image, sigma=NSIGMA)
