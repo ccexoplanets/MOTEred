@@ -182,7 +182,21 @@ class define_instrument:
             self.obs_lat  = -24.625278
             self.obs_long = - 70.402222
             self.obs_elev = 2635.0
-            self.obs = 'paranal'    
+            self.obs = 'paranal'  
+        elif telescope == 'Zeiss':
+            self.gain = 1.5
+            self.ron = 6.3
+            self.obs_lat  = -22.535
+            self.obs_long = -45.5833
+            self.obs_elev = 1870.0
+            self.obs = 'lna'
+        elif telescope == 'LCOGT-0m4c':
+            self.gain = 1.0 # e/ADU
+            self.ron =  3.25 # e/pix
+            self.obs_lat = 20.7069694
+            self.obs_long = -156.2575333
+            self.obs_elev = 3037.0
+            self.obs = 'haleakala'
         else:
             out_error("Telescope %s not recognized"%telescope)
 
