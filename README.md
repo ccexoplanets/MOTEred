@@ -19,7 +19,7 @@ El orden de ejecución es el siguiente:
    
 3) Colocar archivos .fits sin calibrar en las carpetas correspondientes (puede usar comando fitsheader para identificar imágenes).
 4) Editar archivo <ARCHIVO>.par, donde <ARCHIVO> es cualquier nombre a definir (e.g., WASP-19b_TA.par).
-5) Verificar que en archivo .par la información de la noche de observación a calibrar calze con la estructura de archivos en imágenes.
+5) Verificar que en archivo .par la información de la noche de observación a calibrar calce con la estructura de archivos en imágenes.
 6) Ejecutar python calibracion.py <ARCHIVO>.par.
 7) Ejecutar python prepare_photometry.py <ARCHIVO>.par.
 8) Crear lista llamada "science_images.lst" con nombres de archivos .fits que serán incluídos en fotometría (en carpeta science dentro de imagenes "calibrated").
